@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // propertyGrid1
-            // 
-            this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
-            this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(130, 130);
-            this.propertyGrid1.TabIndex = 0;
             // 
             // radioButton1
             // 
@@ -54,20 +48,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(736, 351);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.propertyGrid1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }
 
